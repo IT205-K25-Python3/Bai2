@@ -10,8 +10,8 @@ for i in range(try_count):
         print("Dang nhap thanh cong!")
         break
     else:
-        so_lan_con_lai = try_count - i - 1
-        if so_lan_con_lai > 0:
-            print(f"Sai thong tin! Con {so_lan_con_lai} lan thu.")
+        avail_try_count = try_count - i - 1
+        if avail_try_count > 0:
+            print(f"Sai thong tin! Con {avail_try_count} lan thu.")
         else:
             print("Da het so lan thu!")
