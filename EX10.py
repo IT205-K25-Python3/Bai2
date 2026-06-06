@@ -1,6 +1,6 @@
-so = int(input("Nhap mot so nguyen: "))
+number = int(input("Nhap mot so nguyen: "))
 
-if so % 2 == 0:
-    print(f"{so} la so chan")
+if number % 2 == 0:
+    print(f"{number} la so chan")
 else:
-    print(f"{so} la so le")
+    print(f"{number} la so le")
