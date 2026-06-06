@@ -8,7 +8,7 @@ print("Menu:")
 for key, value in menu.items():
     print(f"{key}. {value['ten']} - {value['gia']} dong")
 
-tong_tien = 0
+total_cost = 0
 
 while True:
     choice = int(input("chon mon (1-3), nhap 0 de thanh toan: "))
@@ -16,12 +16,12 @@ while True:
         break
     
     if choice in menu:
-        so_luong = int(input("Nhap so luong: "))
-        tong_tien += menu[choice] ["gia"] * so_luong
+        amount = int(input("Nhap so luong: "))
+        total_cost += menu[choice] ["gia"] * amount
     else:
         print("Mon khong hop le!")
 
-if tong_tien > 100000:
-    tong_tien = tong_tien * 0.9
+if total_cost > 100000:
+    total_cost = total_cost * 0.9
 
-print(f"Tong tien phai tra: {tong_tien} dong")
+print(f"Tong tien phai tra: {total_cost} dong")
