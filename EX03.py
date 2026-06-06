@@ -1,9 +1,9 @@
-don_gia = float(input("Nhap don gia: "))
-so_luong = int(input("Nhap so luong: "))
+total_cost = float(input("Nhap don gia: "))
+amount = int(input("Nhap so luong: "))
 
-tong_tien = don_gia * so_luong
+total_cost = total_cost * amount
 
-if tong_tien > 500000:
-    tong_tien = tong_tien * 0.9
+if total_cost > 500000:
+    total_cost = total_cost * 0.9
 
-print(f"Tong tien phai tra: {tong_tien} dong")
+print(f"Tong tien phai tra: {total_cost} dong")
