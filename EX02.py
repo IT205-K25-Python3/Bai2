@@ -1,12 +1,12 @@
-diem_tb = float(input("Nhap diem trung binh: "))
+avg_grade_point = float(input("Nhap diem trung binh: "))
 
-if diem_tb >= 8:
-    xep_loai = "Gioi"
-elif diem_tb >= 6.5:
-    xep_loai = "Kha"
-elif diem_tb >= 5:
-    xep_loai = "Trung binh"
+if avg_grade_point >= 8:
+    ranking = "Gioi"
+elif avg_grade_point >= 6.5:
+    ranking = "Kha"
+elif avg_grade_point >= 5:
+    ranking = "Trung binh"
 else:
-    xep_loai = "Yeu"
+    ranking = "Yeu"
 
-print(f"Xep loai: {xep_loai}")
+print(f"Xep loai: {ranking}")
