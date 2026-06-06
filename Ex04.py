@@ -1,7 +1,7 @@
 n = int(input("Nhap so nguyen duong n: "))
 
-tong = 0
+sum = 0
 for i in range(1, n + 1):
-    tong += i
+    sum += i
 
-print(f"Tong tu 1 den {n} la: {tong}")
+print(f"sum tu 1 den {n} la: {sum}")
